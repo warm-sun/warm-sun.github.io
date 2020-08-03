@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>2020/7/4 遇到小仙女的第一天</title>
+<title>遇到小仙女的第一天</title>
 </head>
 
-<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="js/lib/jquery.min.js"></script>
 <script src="js/lib/jquery.fireworks.js" type="text/javascript"></script>
 
 <style type="text/css">
@@ -29,7 +29,6 @@ p{ margin: 0; }
 .btn-a:after{ content: ''; position: absolute; display: block; width: 60px; height: 30px; background: #d26ae5; left: 0; top: -29px; border-top-left-radius: 60px; border-top-right-radius: 60px;}
 .btn-b:before{ content: ''; position: absolute; display: block; width: 30px; height: 60px; background: #c9c9c9; left: -29px; top: 0; border-top-left-radius: 60px; border-bottom-left-radius: 60px; }
 .btn-b:after{ content: ''; position: absolute; display: block; width: 60px; height: 30px; background: #c9c9c9; left: 0; top: -29px; border-top-left-radius: 60px; border-top-right-radius: 60px;}
-.container{  }
 .container .mask{ position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.3); }
 .container .modal{ width: 80%; height: 160px; position: absolute; top: 50%; left: 50%; padding: 20px 15px; border-radius: 5px; transform: translate(-50%, -70%); -webkit-transform: translate(-50%，-70%); background: #f3f3f3;}
 .container .modal p{ margin-top: 20px; margin-bottom: 20px; font-size: 16px; color: #353535; text-align: center;}
@@ -60,9 +59,7 @@ $(function() {
 		modal('我就知道小仙女一定会愿意的。(^_^)', function() {
 			$('.page_one').addClass('hide');
 			$('.page_two').removeClass('hide');
-			// typeWrite();
-			fireworks();
-			
+			typeWrite();
 		});
 	});
 	$('#no').click(function(event) {
